@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    margin: 1em;
+    background-color: darkgray;
+}
+
+.picture{
+    height: 170px;
+    width: 200px;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 1em 3em;
+    border-radius: 5px;
+    margin: 1em;
+}
+
+#moon-earth {
+    background-image: url("https://image.businessinsider.com/58b4a8a101fe581d008b6d65?width=1100&format=jpeg&auto=webp");
+}
+
+#earth-moon {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2O5sla8jPAHgyElhnBwfGrbjdm1Ea4ENvw2cT4BXVhE2xQ6hHNg");
+}
