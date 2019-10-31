@@ -10,6 +10,7 @@ FUNCTIONS
 // 3) they usuallu, but not always, return some value
 // 4) they can be invoked (used) as many times as we want, cutting down on code repetition
 
+console.log('--- example one ---');
 // example one:
 function newFunc(num) {
     return num + 1;
@@ -21,6 +22,8 @@ console.log(newFunc(11));
 console.log(newFunc(-2));
 
 
+console.log(" ");
+console.log('--- example two---');
 // example two:
 function sentence(firtName, lastName) {
     return `My first name is ${firtName} and my last name is ${lastName}`;
@@ -31,6 +34,9 @@ let superImportantSentence = sentence('Nicky', 'Disborough');
 console.log(superImportantSentence);
 
 
+console.log(" ");
+console.log('--- example three---');
+// example three
 // lets build a function that takes a complex type -- an array in this case,
 // and console.log each item in the input array
 let arr = [1, true, {key: 'string'}, [0, false, null], 'string'];
