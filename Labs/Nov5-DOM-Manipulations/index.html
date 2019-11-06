@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+​
+
+<body>
+    ​
+    <h1 id='header'>This is my Header</h1>
+    <div>
+        <p class="first-para" id='about-me'> This is a story all about how my life got flipped...</p>
+    </div>
+    <button id='about-btn'>Go Fishing</button>
+
+    <script>
+        let aboutMe = document.getElementById('about-me')
+        let aboutButton = document.getElementById('about-btn')
+        aboutButton.addEventListener('click', (e) => {
+            aboutMe.innerText = 'I just went fishing!!!'
+        })
+        
+        aboutMe.addEventListener("mouseover", (e) => {
+            aboutMe.style='color: red;'
+        })
+        
+    </script>
+</body>
+
+</html>

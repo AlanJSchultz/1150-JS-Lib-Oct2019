@@ -1,0 +1,56 @@
+<!-- Challenge 2:
+    
+Using the 'balldontlie' open API, 
+grab data from NBA players and 
+display the info to the screen.  
+
+Using whatever tag you would like, display the player's name
+and the team they play for.
+
+https://www.balldontlie.io/#introduction -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge 2 HTML</title>
+</head>
+
+<body>
+<em></em>
+
+
+<script>
+    const baseURL = 'https://www.balldontlie.io/api/v1/players';
+    fetch(baseURL)
+        .then(res => res.json())
+                // .then(json => console.log(json))
+        // .then(json => console.log(json.data))
+        // .then(json => console.log(json.data[1].last_name))
+        .then(json => displayPlayers(json.data))
+        .catch(err => console.log(err))
+
+        
+        
+    function displayPlayers(players) {
+        let body = document.getElementsByTagName('body')[0]
+        for (let i = 0; i < players.length; i++) {
+            // const element = players[i];
+            // console.log(players)
+            let p = document.createElement('p')
+            // p.innerText = players[i].last_name
+            p.innerHTML = `<strong>${players[i].last_name}</strong>`
+            body.appendChild(p)
+            console.log(players[i])
+        }
+    }
+
+
+</script>
+</body>
+
+</html>
