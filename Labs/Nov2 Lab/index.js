@@ -1,3 +1,4 @@
+//jshint esversion:7
 
 /*
 
@@ -12,3 +13,19 @@ Once you 've finished working on this page, save your webpage as a code pen and 
 
 */
 
+let x = {
+    weather: "Rain",
+    temperature: 54,
+    outdoorActivities: false
+};
+console.log(x.weather);
+
+
+function myFunction(a, b) {
+    return a * b;
+}
+console.log(myFunction(3, 4));
+
+
+let y = [11, 50, 1, 50];
+console.log(y[1]);

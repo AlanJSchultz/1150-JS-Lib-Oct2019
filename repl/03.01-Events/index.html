@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>repl 03.01 Events</title>
+</head>
+<body>
+    
+<a><img id="abstractArt"
+        src="https://images.pexels.com/photos/1252848/pexels-photo-1252848.jpeg?cs=srgb&dl=abstract-expressionism-abstract-painting-acrylic-1252848.jpg&fm=jpg"
+        width="400" height="300"></a>
+
+<script>
+
+    let myImage = document.getElementById('abstractArt')
+
+    myImage.addEventListener("mouseover", onMouseOver)
+    function onMouseOver() {
+        let pTag = document.createElement('p')
+        pTag.innerText = "You entered the picture!"
+        document.body.appendChild(pTag)
+    }
+
+    myImage.addEventListener("mouseleave", onMouseLeave)
+    function onMouseLeave() {
+        let pTag = document.createElement('p')
+        pTag.innerText = "You left the picture!"
+        document.body.appendChild(pTag)
+    }
+
+</script>
+    
+</body>
+</html>
