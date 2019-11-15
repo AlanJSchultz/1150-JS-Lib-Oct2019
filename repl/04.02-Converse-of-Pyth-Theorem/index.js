@@ -21,12 +21,9 @@ input to the function.
 
 function pythConverse(a, b, c) {
     //insert your code here
-    if (c !> a || b) {
-        console.log("The largest side must be the third input to the function.")
-    } else if (c**2 == a**2 + b**2) {
-        console.log("The triangle is a right triangle.")
-    } else {
-        console.log("The traingle is NOT a right triangle.")
-    }
+
+    return(c ** 2 == a ** 2 + b ** 2);
+    
 }
-pythConverse();
+console.log(pythConverse(3, 4, 5)); // true
+console.log(pythConverse(4, 5, 6)); // false
