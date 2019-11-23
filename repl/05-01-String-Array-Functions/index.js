@@ -31,14 +31,23 @@ output - ['Tyler Michael Shelton',
 
 
 let inputArr = ['tyler Michael shelton', 'LAINEY', '1150 academy', 'quietly tiptoe', 'this is a thing'];
-console.log(qOrPRemover(capitalFirst(inputArr)));
+
+console.log(qpRemover(capitalizer(inputArr)));
 
 function qpRemover(array) {
-    //insert your code here
-
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        if (element.includes('p') || element.includes('q') || element.includes('P') || element.includes('Q')) {
+            array.splice(i, 1);
+        }
+    }
+    return array;
 }
 
 function capitalizer(array) {
     //insert your code here
-    
+    for (let i = 0; i < array.length; i++) {
+        array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+    }
+    return array;    
 }
